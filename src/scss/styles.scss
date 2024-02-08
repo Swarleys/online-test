@@ -1,0 +1,20 @@
+@import "bootstrap/scss/bootstrap";
+.gray-background {
+    background-color: rgb(240, 240, 240);
+}
+
+.primary-background{
+    background-color: #16A974;
+}
+
+.breadcrumb {
+  --bs-breadcrumb-divider-color: white;
+}
+
+i, .primary-color {
+    color: #16A974;
+}
+
+.btn-compte {
+    background-color: #16A974;
+}

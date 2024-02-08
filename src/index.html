@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-light navbar-expand-xl bg-white shadow-sm flex-wrap sticky-top"
+      style="transition: 100ms linear"
+    >
+      <div class="container d-flex justify-content-between">
+        <div>
+          <a href="/" title="Infonet" rel="home" class="d-block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="131.364"
+              height="40"
+              viewBox="0 0 131.364 40"
+              class="logo"
+            >
+              <g transform="translate(24082 11573)">
+                <path
+                  class="rectangle"
+                  d="M2,0H72.737a2,2,0,0,1,2,2V38a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z"
+                  transform="translate(-24082 -11573)"
+                  fill="#16a974"
+                ></path>
+                <path
+                  class="info"
+                  d="M4.679-17.567a3.162,3.162,0,0,0,2.236-.939,3.162,3.162,0,0,0,.913-2.246,3.131,3.131,0,0,0-.917-2.231A3.131,3.131,0,0,0,4.679-23.9a3.131,3.131,0,0,0-2.231.916,3.131,3.131,0,0,0-.918,2.231,3.162,3.162,0,0,0,.913,2.247,3.162,3.162,0,0,0,2.236.939ZM7.435,1.258V-16.028H1.924V1.258Zm21.223,0v-12.24c0-3.185-1.789-5.476-5.726-5.476a7.813,7.813,0,0,0-5.977,2.541v-2.112H11.444V1.258h5.512V-9.908A4.265,4.265,0,0,1,20.32-11.59c1.718,0,2.827.752,2.827,2.863V1.258Zm10.7,0V-11.233h3.507v-4.8H39.359v-.716a1.81,1.81,0,0,1,.47-1.467,1.81,1.81,0,0,1,1.43-.573,2.836,2.836,0,0,1,1.432.358l1-3.758a7.894,7.894,0,0,0-3.651-.787,5.852,5.852,0,0,0-4.446,1.668,5.852,5.852,0,0,0-1.746,4.416v.859H30.985v4.8h2.863V1.258Zm14.065.429c5.941,0,9.448-4.223,9.448-9.091s-3.507-9.055-9.448-9.055c-5.869,0-9.413,4.187-9.413,9.055s3.545,9.091,9.415,9.091Zm0-4.867c-2.4,0-3.722-1.9-3.722-4.223,0-2.291,1.324-4.187,3.722-4.187,2.434,0,3.794,1.9,3.794,4.187,0,2.326-1.359,4.223-3.792,4.223Z"
+                  transform="translate(-24076.656 -11541.626)"
+                  fill="#fff"
+                ></path>
+                <path
+                  class="net"
+                  d="M19.119,1.1V-11.14c0-3.185-1.789-5.476-5.726-5.476a7.813,7.813,0,0,0-5.977,2.541v-2.112H1.9V1.1H7.416V-10.066a4.265,4.265,0,0,1,3.364-1.682c1.718,0,2.827.752,2.827,2.863V1.1Zm12.311.43A11.276,11.276,0,0,0,38.66-.761L36.333-4.2a7.32,7.32,0,0,1-4.3,1.467c-2.5,0-4.008-1.467-4.331-3.078H40.02V-6.988c0-5.869-3.722-9.627-8.84-9.627a8.921,8.921,0,0,0-6.538,2.559,8.921,8.921,0,0,0-2.662,6.5C21.982-1.942,26.1,1.53,31.43,1.53ZM34.759-9.386H27.637a3.415,3.415,0,0,1,3.543-2.971,3.322,3.322,0,0,1,3.579,2.971ZM49.289,1.53A6.016,6.016,0,0,0,53.369.385L52.3-3.767a2.142,2.142,0,0,1-1.4.429,1.567,1.567,0,0,1-1.161-.533,1.567,1.567,0,0,1-.378-1.221v-6.3h3.507v-4.8H49.361V-20.91H43.885v4.724H41.022v4.8h2.863v7.838C43.885-.224,45.782,1.53,49.289,1.53Z"
+                  transform="translate(-24004.006 -11541.469)"
+                  fill="#283136"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse" id="menu">
+          <ul
+            class="navbar-nav align-items-start align-items-xl-center mt-2 mt-xl-0 ml-auto"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link text-nowrap text"
+                rel="nofollow"
+                href="/recherche-entreprises"
+                title="Liste des entreprises"
+              >
+                ENTERPRISES
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-nowrap"
+                href="/dirigeants/"
+                title="Liste des dirigeants"
+              >
+                DIRIGEANTS
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-nowrap dropdown-toggle"
+                href="/api/"
+                title="Api Infonet"
+              >
+                API
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-nowrap dropdown-toggle"
+                href="/services/"
+                title="Les services Infonet"
+              >
+                SERVICES
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-nowrap dropdown-toggle"
+                href="/guide/"
+                title="Le guide Infonet"
+              >
+                GUIDE
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-nowrap dropdown-toggle"
+                href="/lexique/"
+                title="Lexique de l'entreprise"
+              >
+                LEXIQUE
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-nowrap"
+                href="/videos/"
+                title="Découvrez les analyses de nos experts"
+                >VIDÉOS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-nowrap"
+                href="/actualite/"
+                title="Actualité économique et financière pour les entreprises"
+              >
+                ACTUALITÉ
+              </a>
+            </li>
+            <li class="nav-item mb-0">
+              <a
+                class="nav-link text-nowrap btn btn-primary btn-compte text-white"
+                href="/mon-abonnement/"
+                title="Mon compte"
+                >Mon compte</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <main>
+      <!-- background green -->
+      <section class="primary-background py-4">
+        <nav
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+          class="container"
+        >
+          <ol class="breadcrumb text-white">
+            <li class="breadcrumb-item text-white">Accueil</li>
+            <li class="breadcrumb-item text-white">Métiers</li>
+            <li class="breadcrumb-item text-white">
+              Audit et contrôle comptables et financiers
+            </li>
+            <li class="breadcrumb-item text-white opacity-75">
+              Expert comptable
+            </li>
+          </ol>
+        </nav>
+        <div class="card hstack container rounded gap-2">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/37d8/0904/153c62d77d2e84e0ad92983c4b1e3ed2?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MgLqgBgK4Pg7wxDrONHTHvodtBgLzKxaV720~aIWfz704KAlgM8sejY1GVgsEyZ-USuS-RFmll1Y2Vg7yxIUzwE-wVXlDV5W6VvSxoebeoVdw6LfnRrjDLJ3YFWFTupOc3wxtYSTFIbZiXCMmml4UuatcAHhIvmrR8HSSwuhP6NybpIb08K1MJhSeM68ANUZ6VJibI7Hewyh3Hmc31KtHYWnuk34OjtbPBiXMWG9xfwc09B81mR6lD-qJljkKz5LU3BNfo4XcXV~53EPLRWb3zWoV2GJx8847w9OdvIh0w7Bepb0BwxYTmNC6WEs7muTAOfI84fi1r8fPoP8Q0ZO3w__"
+            alt="Worker"
+          />
+          <div>
+            <span class="fs-6 text-uppercase primary-color">Fiche métier</span>
+            <h1 class="fs-3"><strong>Expert-comptable</strong></h1>
+            <p class="fs-6 text-secondary">
+              L'expert-comptable est le professionnel de la gestion financière
+              d'une entreprise. Son rôle est de conseiller sa direction sur le
+              plan fiscal, social et économique. Il tient la comptabilité,
+              réalise un bilan chaque année et déclare les résultats fiscaux. Il
+              est également en charge de l'audit interne et contrôle la gestion
+              de l'entreprise pour s'assurer de sa santé financière. Il peut
+              travailler en indépendant ou dans un cabinet comptable, mais aussi
+              en interne dans une entreprise en tant que directeur administratif
+              et financier. Fin stratège, il est amené à proposer des solutions
+              d'optimisation financière. Ce métier requiert rigueur, discrétion
+              et une excellente connaissance du droit et de la réglementation en
+              matière économique et financière. Les compétences en communication
+              sont aussi nécessaires pour expliquer et conseiller sur des sujets
+              complexes. Il est également tenu au secret professionnel.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- cards -->
+      <section class="gray-background d-flex flex-column gap-4">
+        <section class="container mt-4 d-flex flex-column gap-2">
+          <div class="d-flex gap-2">
+            <div class="card col-3">
+              <i class="bi bi-briefcase"></i>
+              <h2><strong>Secteur d’activité</strong></h2>
+              <p>Audit et contrôle comptables et financiers</p>
+              <span class="text-secondary fs-6">Code ROME - M1202</span>
+            </div>
+            <div class="card col-3">
+              <i class="bi bi-backpack"></i>
+              <h2><strong>Niveau d’étude</strong></h2>
+              <p>BAC +8</p>
+              <span class="text-secondary fs-6">DEC (Diplôme d'Expertise Comptable)</span>
+            </div>
+            <div class="card col-3">
+              <i class="bi bi-file-earmark-bar-graph"></i>
+              <h2><strong>54 %</strong></h2>
+              <p>CDI</p>
+              <span class="text-secondary fs-6">Source Pôle Emploi</span>
+            </div>
+            <div class="card col-3">
+              <i class="bi bi-person"></i>
+              <h2><strong>74 %</strong></h2>
+              <p>Hommes</p>
+              <span class="text-secondary fs-6">Source Pôle Emploi</span>
+            </div>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="card col-3">
+              <i class="bi bi-currency-euro"></i>
+              <h2><strong>Salaire débutant</strong></h2>
+              <p>2 708 €</p>
+              <span class="text-secondary">Bruts mensuel</span>
+            </div>
+            <div class="card col-3">
+              <i class="bi bi-person-add"></i>
+              <h2><strong>Demandeurs d’emploi</strong></h2>
+              <p>3 950</p>
+              <span class="text-secondary">Pôle Emploi</span>
+            </div>
+            <div class="card col-3">
+              <i class="bi bi-file"></i>
+              <h2><strong>Offres d’emplois</strong></h2>
+              <p>198 300</p>
+              <span class="text-secondary">Pôle Emploi</span>
+            </div>
+            <div class="card col-3">
+              <i class="bi bi-hand-thumbs-up"></i>
+              <h2><strong>Volume d'embauche</strong></h2>
+              <p>Volume d'embauche</p>
+              <span class="text-secondary">Emplois par an</span>
+            </div>
+          </div>
+        </section>
+        <!-- graphs -->
+        <section class="container bg-white rounded">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="fs-5 mt-4">Répartition par âge</h1>
+              <div class="d-flex align-items-center">
+                <span class="col-2">- 30 ans</span
+                ><meter class="col-9" value="1" min="0" max="100">1%</meter>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="col-2">30 - 49 ans</span
+                ><meter class="col-9" value="49" min="0" max="100">49%</meter>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="col-2">50 - 65 ans</span
+                ><meter class="col-9" value="42" min="0" max="100">42%</meter>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="col-2">+65 ans</span
+                ><meter class="col-9" value="8" min="0" max="100">8%</meter>
+              </div>
+            </div>
+            <div class="col-6">
+              <h1 class="fs-5 mt-4">Répartition par taille d’entreprise</h1>
+              <div class="d-flex align-items-center">
+                <span class="col-2">- 30 ans</span
+                ><meter class="col-9" value="77" min="0" max="100">1%</meter>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="col-2">- 30 ans</span
+                ><meter class="col-9" value="7.9" min="0" max="100">1%</meter>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="col-2">- 30 ans</span
+                ><meter class="col-9" value="5.1" min="0" max="100">1%</meter>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="col-2">- 30 ans</span
+                ><meter class="col-9" value="1.1" min="0" max="100">1%</meter>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- salary -->
+        <section class="container bg-white rounded">
+          <h1>Salaire d’expert-comptable</h1>
+          <div class="row">
+            <div class="col-6">
+              <p>
+                En France, le salaire mensuel moyen d'un expert comptable est de
+                4 477 € brut en 2022, c'est-à-dire 53 719 € brut annuel. Tandis
+                que le salaire brut médian s'élève à 4 167 € mensuel, soit une
+                rémunération annuelle de 50 000 € brut par an.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <h3>Salaire brut à l’embauche</h3>
+                  <p>2 708 €</p>
+                  <span>32 K€ (annuel)</span>
+                </div>
+                <div class="col-6">
+                  <h3>Salaire brut médian</h3>
+                  <p>4 167 €</p>
+                  <span>50 K€ (annuel)</span>
+                </div>
+                <div class="col-6">
+                  <h3>Salaire brut moyen</h3>
+                  <p>4 477 €</p>
+                  <span>54 K€ (annuel)</span>
+                </div>
+                <div class="col-6">
+                  <h3>Salaire brut moyen en France</h3>
+                  <p>3 300 €</p>
+                  <span>40 K€ (annuel)</span>
+                </div>
+              </div>
+              <p>
+                Le salaire d'un expert-comptable peut varier en fonction de
+                nombreux facteurs tels que l'expérience, la localisation,
+                l'entreprise, etc. En France, le salaire moyen est généralement
+                compris entre 40 000 et 100 000 euros brut par an. Un
+                expert-comptable débutant peut gagner environ 40 000 euros brut
+                par an, tandis qu'un professionnel expérimenté peut gagner plus
+                de 100 000 euros brut par an.
+              </p>
+            </div>
+            <!-- graph -->
+            <div class="col-6"></div>
+          </div>
+        </section>
+        <!-- last one -->
+        <section class="container bg-white rounded mb-5">
+          <h2>Études / Formation</h2>
+          <p>
+            Pour devenir Expert-comptable, le parcours de formation est assez
+            long et complexe. Voici les étapes générales :
+          </p>
+          <div class="hstack gap-2">
+            <i class="bi bi-arrow-right-short"></i>
+            <p>
+              <strong>Diplôme de Comptabilité et de Gestion (DCG) </strong>:
+              C'est une formation de niveau licence qui offre une bonne base
+              dans les domaines de la comptabilité, du droit et de la finance.
+            </p>
+          </div>
+          <div class="hstack gap-2">
+            <i class="bi bi-arrow-right-short"></i>
+            <p>
+              <strong
+                >Diplôme Supérieur de Comptabilité et de Gestion (DSCG) </strong
+              >: C'est une formation de niveau Master. En général, deux années
+              d'études supplémentaires sont nécessaires pour obtenir ce diplôme
+              après le DCG
+            </p>
+          </div>
+          <div class="hstack gap-2">
+            <i class="bi bi-arrow-right-short"></i>
+            <p>
+              <strong>Stage professionnel d'expertise comptable </strong>: Après
+              avoir obtenu le DSCG, il est nécessaire de travailler en tant que
+              stagiaire pendant trois ans minimum dans un cabinet d'expertise
+              comptable.
+            </p>
+          </div>
+          <div class="hstack gap-2">
+            <i class="bi bi-arrow-right-short"></i>
+            <p>
+              <strong>Diplôme d'Expertise Comptable (DEC) </strong>: Ce diplôme
+              est l'ultime étape pour devenir expert-comptable. Il nécessite la
+              réussite d'un examen final et la rédaction d'une thèse
+              professionnelle.
+            </p>
+          </div>
+          <p>
+            Il existe toutefois des passerelles et des équivalences pour les
+            candidats qui ont déjà un master en comptabilité, finance ou
+            gestion. Certains programmes de master en école de commerce incluent
+            également une préparation aux examens du DCG et du DSCG. Par
+            ailleurs, il est important de noter que le parcours peut être
+            légèrement différent en fonction des pays.
+          </p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
